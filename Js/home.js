@@ -5,6 +5,7 @@ const menus = document.getElementById("menus");
 const close_2 = document.getElementById("close-2");
 const menutoggle = document.getElementById("toggle");
 
+close_2.classList.add("close-3")
 
 search_view.addEventListener("click", () => {
     search_input.classList.add("search-hide")
@@ -25,4 +26,10 @@ close_2.addEventListener("click", () => {
     menus.classList.add("menus-durition")
     menutoggle.classList.remove("menutoggle-hide")
     close_2.classList.remove("close-2-view")
+    
 })
+// window.addEventListener("scroll", () => {
+//     menus.classList.remove("menus-view")    
+//     menutoggle.classList.remove("menutoggle-hide")
+//     close_2.classList.remove("close-2-view")
+// })

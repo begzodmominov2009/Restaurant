@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(216, 214, 214, 0.159);
+    background-color: #d8d6d629;
 }
 @media (max-width:1024px) {
     .search{
@@ -37,6 +37,7 @@ body{
 #menus{
     /* transform: translateY(-200%); */
     opacity: 0;
+
 }
 .menus-view{
     /* transform: translateY(0%) !important; */
@@ -50,4 +51,7 @@ body{
 }
 .close-2-view{
     display: flex;
+}
+.menus-opoc{
+    opacity: 0 !important;
 }

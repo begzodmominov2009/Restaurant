@@ -34,6 +34,7 @@ search_card_v.addEventListener("click", () => {
 })
 search_card_close.addEventListener("click", () => {
     menus_2.classList.remove("menus-2-hiden")
+    search_card.classList.add("search-card-duration")
 })
 
 menutoggle.addEventListener("click", () => {

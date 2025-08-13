@@ -5,10 +5,12 @@ body {
 * {
     font-family: "Roboto", sans-serif;
 }
-h1{
+
+h1 {
     font-family: sans-serif;
 }
-p{
+
+p {
     font-family: sans-serif;
 }
 
@@ -74,6 +76,53 @@ p{
     display: flex;
 }
 
-.menus-opoc {
-    opacity: 0 !important;
+@media (max-width:640px) {
+    #search-card {
+        background-color: white;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        padding-top: 250px;
+        width: 100vw;
+        height: 200vw;
+        position: fixed;
+        opacity: 0;
+        z-index: 100px;
+        position: relative;
+        bottom: -200px;
+    }
+
+    .search-card_input {
+        width: 100%;
+        border: 1px solid black;
+        outline: none;
+        border-radius: 10px;
+        height: 40px;
+        padding-left: 20px;
+    }
+
+    .search-card_div1 {
+        justify-content: center;
+        margin-top: -140px;
+        max-width: 100%;
+    }
+    .close-{
+        position: absolute;
+        top: 30px;
+        right: 25px;
+    }
+    .search-fitme{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        font-size: 22px;
+    }
+    .search-card-view{
+        opacity: 1 !important;
+    }
+    .search-card-duration{
+        transition: 0.5s !important;
+    }
+    .menus-2-hiden{
+        display: none !important;
+    }
 }

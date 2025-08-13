@@ -25,7 +25,7 @@
                     <div class="flex items-center gap-[5px] w-[300px] sm:w-[320px] md:w-[350px] w-full search"
                         id="search-input">
                         <button id="close"
-                            class="flex lg:hidden ml-[-30px] w-[20px] sm:w-[25px] h-[20px] sm:h-[25px] bg-[width] hover:bg-black/80 durition-[0.2s] border-[black] hover:fill-white rounded-[15px] flex justify-center items-center">
+                            class="md:flex lg:hidden ml-[-30px] w-[20px] sm:w-[25px] h-[20px] sm:h-[25px] bg-[width] hover:bg-black/80 durition-[0.2s] border-[black] hover:fill-white rounded-[15px] flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
                                 fill="#1f1f1f#1f1f1f#1f1f1f">
                                 <path
@@ -35,7 +35,6 @@
                         <input id="search"
                             class="w-full outline-none px-[25px] text-[14px] h-[30px] sm:h-[39px] border-2 border-[#808080] rounded-[10px]"
                             placeholder="Enter item or restaurant you are looking for" type="search inmf">
-
                     </div>
                     <svg id="search-view" class="flex lg:hidden" xmlns="http://www.w3.org/2000/svg" height="34px"
                         viewBox="0 -960 960 960" width="34px" fill="#1f1f1f#1f1f1f#1f1f1f">
@@ -183,7 +182,24 @@
 
     </header>
 
-    <ul
+    <div id="search-card">
+        <div class="container mx-auto px-[20px] ">
+
+            <div class="search-card_div1">
+                <svg class="close-" id="search-card-close" xmlns="http://www.w3.org/2000/svg" height="30px"
+                    viewBox="0 -960 960 960" width="30px" fill="#1f1f1f#1f1f1f#1f1f1f">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+                <h1 class="search-fitme">Search FitMe</h1>
+                <div class="search-card_div">
+                    <input class="search-card_input" placeholder="Search" type="search number">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul id="menus-2"
         class="flex sm:hidden bg-[white] flex fixed h-[10vw] w-[100vw] bottom-[0px] justify-between items-center flex py-[30px] px-[45px] z-[80px]">
         <li class="">
             <a class="flex flex-col text-[12px] items-center " href="">

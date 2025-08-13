@@ -17,7 +17,6 @@ p {
 @media (max-width:1024px) {
     .search {
         padding-top: 80px;
-        /* transform: translateX(-250%); */
         opacity: 0;
     }
 }
@@ -41,7 +40,6 @@ p {
 }
 
 .search-hide {
-    /* transform: translateX(-0%); */
     opacity: 1;
 }
 
@@ -54,13 +52,11 @@ p {
 }
 
 #menus {
-    /* transform: translateY(-200%); */
     opacity: 0;
 
 }
 
 .menus-view {
-    /* transform: translateY(0%) !important; */
     opacity: 1 !important;
 }
 
@@ -83,7 +79,7 @@ p {
         border-top-right-radius: 50px;
         padding-top: 250px;
         width: 100vw;
-        height: 200vw;
+        height: 195vw;
         position: fixed;
         opacity: 0;
         z-index: 100px;

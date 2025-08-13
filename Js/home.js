@@ -7,6 +7,7 @@ const menutoggle = document.getElementById("toggle");
 const search_card = document.getElementById("search-card")
 const search_card_close = document.getElementById("search-card-close")
 const menus_2 = document.getElementById("menus-2")
+const search_card_v = document.getElementById("search-card-v")
 
 close_2.classList.add("close-3")
 
@@ -19,7 +20,7 @@ close.addEventListener("click", () => {
     search_input.classList.add("search-durition")
 })
 
-search_view.addEventListener("click", () => {
+search_card_v.addEventListener("click", () => {
     search_card.classList.add("search-card-view")
     search_card.classList.add("search-card-duration")
     menus_2.classList.add("menus-2-hiden")
@@ -28,12 +29,13 @@ search_card_close.addEventListener("click", () => {
     search_card.classList.remove("search-card-view")
     search_card.classList.add("search-card-duration")
 })
-search_view.addEventListener("click", () => {
+search_card_v.addEventListener("click", () => {
     menus_2.classList.add("menus-2-hiden")
 })
 search_card_close.addEventListener("click", () => {
     menus_2.classList.remove("menus-2-hiden")
 })
+
 menutoggle.addEventListener("click", () => {
     menus.classList.add("menus-view")
     menus.classList.add("menus-durition")
@@ -47,3 +49,26 @@ close_2.addEventListener("click", () => {
     close_2.classList.remove("close-2-view")
 
 })
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});
+
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        0: {
+            items: 4,
+        },
+        600: {
+            items: 3,
+        },
+        1000: {
+            items: 4,
+        },
+    },
+});

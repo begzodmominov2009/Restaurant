@@ -11,6 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -36,7 +44,12 @@
                             class="w-full outline-none px-[25px] text-[14px] h-[30px] sm:h-[39px] border-2 border-[#808080] rounded-[10px]"
                             placeholder="Enter item or restaurant you are looking for" type="search inmf">
                     </div>
-                    <svg id="search-view" class="flex lg:hidden" xmlns="http://www.w3.org/2000/svg" height="34px"
+                    <svg id="search-view" class="hidden sm:flex lg:hidden" xmlns="http://www.w3.org/2000/svg"
+                        height="34px" viewBox="0 -960 960 960" width="34px" fill="#1f1f1f#1f1f1f#1f1f1f">
+                        <path
+                            d="M80-200v-80h400v80H80Zm0-200v-80h200v80H80Zm0-200v-80h200v80H80Zm744 400L670-354q-24 17-52.5 25.5T560-320q-83 0-141.5-58.5T360-520q0-83 58.5-141.5T560-720q83 0 141.5 58.5T760-520q0 29-8.5 57.5T726-410l154 154-56 56ZM560-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z" />
+                    </svg>
+                    <svg id="search-card-v" class="flex sm:hidden" xmlns="http://www.w3.org/2000/svg" height="34px"
                         viewBox="0 -960 960 960" width="34px" fill="#1f1f1f#1f1f1f#1f1f1f">
                         <path
                             d="M80-200v-80h400v80H80Zm0-200v-80h200v80H80Zm0-200v-80h200v80H80Zm744 400L670-354q-24 17-52.5 25.5T560-320q-83 0-141.5-58.5T360-520q0-83 58.5-141.5T560-720q83 0 141.5 58.5T760-520q0 29-8.5 57.5T726-410l154 154-56 56ZM560-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z" />
@@ -195,6 +208,52 @@
                 <div class="search-card_div">
                     <input class="search-card_input" placeholder="Search" type="search number">
                 </div>
+
+                <div class="owl-carousel owl-theme mt-[30px] sm:hidden">
+                    <div class="w-[80px]">
+                        <img class="" src="./assets/home/osh.png" alt="osh">
+                    </div>
+                    <div class="w-[80px]">
+                        <img src="./assets/home/product-1.png" alt="">
+                    </div>
+                    <div class="w-[80px]">
+                        <img src="./assets/home/product-2.png" alt="">
+                    </div>
+                    <div class="w-[80px]">
+                        <img src="./assets/home/product-3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-[0px] sm:hidden">
+                    <div class="flex items-center gap-[10px] mt-[60px] bg-[#d8d6d629] p-[10px] rounded-[10px]">
+                        <img class="w-[80px]" src="./assets/home/osh.png" alt="img">
+                        <div>
+                            <h1 class="text-[18px]">Royal Chicken Rice Bowl <br> (Jumbo)</h1>
+                            <p class="text-[#808080] text-[15px]">Fasso - Wraps & Bowls</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[10px] mt-[20px] bg-[#d8d6d629] p-[10px] rounded-[10px]">
+                        <img class="w-[80px]" src="./assets/home/product-1.png" alt="img">
+                        <div>
+                            <h1 class="text-[18px]">Royal Chicken Rice Bowl <br> (Jumbo)</h1>
+                            <p class="text-[#808080] text-[15px]">Fasso - Wraps & Bowls</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[10px] mt-[20px] bg-[#d8d6d629] p-[10px] rounded-[10px]">
+                        <img class="w-[80px]" src="./assets/home/product-2.png" alt="img">
+                        <div>
+                            <h1 class="text-[18px]">Royal Chicken Rice Bowl <br> (Jumbo)</h1>
+                            <p class="text-[#808080] text-[15px]">Fasso - Wraps & Bowls</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[10px] mt-[20px] bg-[#d8d6d629] p-[10px] rounded-[10px]">
+                        <img class="w-[80px]" src="./assets/home/product-3.png" alt="img">
+                        <div>
+                            <h1 class="text-[18px]">Royal Chicken Rice Bowl <br> (Jumbo)</h1>
+                            <p class="text-[#808080] text-[15px]">Fasso - Wraps & Bowls</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -275,7 +334,7 @@
         </section>
     </main> -->
 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <!-- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> -->
     <!-- <footer class="hidden sm:flex bg-[#FC8019] mt-[80px] pt-[108px] pb-[101px]">
         <div class="container mx-auto px-[20px]">
             <div class="flex justify-between items-center ">
@@ -301,6 +360,12 @@
         </div>
     </footer> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./Js/home.js"></script>
 </body>
 
